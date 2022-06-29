@@ -1,0 +1,132 @@
+#navigation {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+    height: var(--headerHeight);
+}
+
+.padrao {
+    display: block;
+}
+
+.secundario {
+    display: none;
+    background-color: var(--primaryColor);
+    opacity: 96%;
+}
+
+.navigation__logo {
+    width: 200px;
+    margin-top: 16px;
+    margin-inline: auto;
+}
+
+.navigation__menuButton {
+    position: absolute;
+    margin-top: 25px;
+    width: 28px;
+    right: 30px;
+}
+
+.navigation__menuButton2 {
+    position: absolute;
+    margin-top: 25px;
+    width: 28px;
+    right: 30px;
+}
+
+.menuOpen {
+    overflow: hidden;
+}
+
+.menuOpen .navigationBtns  {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 96%;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primaryColor);
+    margin-top: calc(var(--headerHeight) - 7.5px);
+}
+
+.navigationBtns .container a{
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 7vw;  
+    width: 10vw;
+}
+
+.navigationBtns .container {
+    margin-top: 15%;
+}
+
+body.menuExpendedOpen {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.icoRede { 
+    margin: 4vw 1.0vw 1.0vw 1.0vw; 
+    width: 15vw;
+}
+
+.linksPadrao {
+    display: none;
+}
+
+.linksSecundarios {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    #btMenuPadrao {
+        display: none;
+    }
+
+    #btMenuSecundario {
+        display: none;
+    }
+
+    .linksPadrao {
+        position: fixed;
+        top:0;
+        display: flex;
+        margin-top: 25px;
+        right: 4vw;
+        gap: 15px;
+    }
+
+    .linksSecundarios {
+        position: fixed;
+        top:0;
+        display: flex;
+        margin-top: 25px;
+        right: 4vw;
+        gap: 15px;
+    }
+
+    .linksSecundarios .active{
+        font-weight: 600;
+    }
+
+    .linksPadrao a {
+        text-decoration: none;
+        color: var(--primaryColor);
+    }
+
+    .linksPadrao a[href*=home] {
+        font-weight: 600;
+    }
+
+    .linksSecundarios a {
+        text-decoration: none;
+        color: #000;
+    }
+}

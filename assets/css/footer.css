@@ -1,0 +1,52 @@
+#footer footer {
+    margin-top: 25px;
+    background-color: var(--primaryColor);    
+}
+
+#footer .textContainer {
+    margin-inline: 4px;
+    gap: .6rem;
+}
+
+#footer .textContainer span {
+    vertical-align: middle;
+    display: table-cell;
+    color: var(--lightColor);
+    text-decoration: none;
+}
+
+#footer div .textContainer img {
+    width: 25px;
+    margin-top: 14px; 
+}
+
+#footer .textContainer img {
+    width: 25px;
+    margin-top: 0px; 
+}
+
+#footer h6 {
+    color: var(--lightColor);
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+#footer .footerDesktop {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    #footer .footerCel {
+        display: none;
+    }
+
+    #footer .footerDesktop {
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    .footerDesktop div.logo img {
+        margin-top: 15px;
+        height: 45px;
+    }
+}

@@ -1,0 +1,88 @@
+
+@font-face {
+    font-family: 'fontelogo';
+    src: url('../fonts/ngutangDong.otf') format('opentype'), url('../fonts/ngutangDong.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#localizacao .endereco {
+    opacity: 85%;
+    background-color: var(--primaryColor);
+    border-radius: 0px 0px 7px 7px;
+    float: right;
+    position: absolute;
+    width: 49vw;
+    height: 20vw;
+    right: 26vw;
+}
+
+#localizacao .endereco h3 {
+    color: var(--lightColor);
+    opacity: 100%;
+    font-family: 'fontelogo';
+    font-weight: 100;
+    font-size: 9vw;
+    margin-top: 0.3rem;
+    height: 9vw;
+}
+
+#localizacao .divisaolocalizacao {
+    background-color: var(--lightColor);
+    height: 1px;
+    margin: 1.6vw 2.4vw 0.5vw 1.9vw;
+}
+
+#localizacao .endereco h6 {
+    color: var(--lightColor);
+    font-weight: 200;
+    font-size: 2.7vw;
+    line-height: 3.5vw;
+}
+
+
+#localizacao img {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    
+    #localizacao .endereco {
+        opacity: 85%;
+        background-color: var(--primaryColor);
+        border-radius: 0px 0px 7px 7px;
+        float: right;
+        position: absolute;
+        width: 38vw;
+        height: 16vw;
+        right: 30.5vw;
+    }
+    
+    #localizacao .endereco h3 {
+        color: var(--lightColor);
+        opacity: 100%;
+        font-family: 'fontelogo';
+        font-weight: 100;
+        font-size: 7vw;
+        margin-top: 0.3rem;
+        height: 9vw;
+    }
+    
+    #localizacao .divisaolocalizacao {
+        background-color: var(--lightColor);
+        height: 1px;
+        width: 34.7vw;
+        
+        
+        margin: -0.5vw 0vw 0.5vw 1.5vw;
+    }
+    
+    #localizacao .endereco h6 {
+        color: var(--lightColor);
+        font-weight: 200;
+        font-size: 2.1vw;
+        line-height: 2.9vw;
+    }
+    
+    
+}
